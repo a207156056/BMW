@@ -47,6 +47,7 @@ public class MainActivity extends BaseActivity<NetView,NetPresenter> implements 
             @Override
             public void onRefresh(RefreshLayout refreshlayout) {
                 mPage = 1;
+                adapter.mResultBean.clear();
                 initData();
                 mSmart.finishRefresh();
             }
